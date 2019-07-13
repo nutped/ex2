@@ -4,6 +4,10 @@ const port = 3000
 
 app.get('/', (req, res) => res.send('Hataipan Weerapin'))
 app.get('/about', (req, res) => res.send('หน้า about'))
-app.get('/context', (req, res) => res.send('หน้า context'))
+app.get('/contact', (req, res) => res.send('หน้า contact'))
+app.get('/test', (req, res) =>{
+    res.json({message : "test"})
+
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
